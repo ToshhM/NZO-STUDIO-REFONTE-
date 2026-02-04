@@ -15,16 +15,18 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
 
   // Liste exhaustive des 10 moments illustrés par vos photos
   const galleryImages = [
-    { url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80", title: "L'Art du Baiser" }, // Sous le voile
-    { url: "https://images.unsplash.com/photo-1519225495810-751251df6127?auto=format&fit=crop&w=800&q=80", title: "La Réception" }, // Chaises sous tente
-    { url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80", title: "La Cérémonie Laïque" }, // N'zo officiant
-    { url: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=800&q=80", title: "L'Engagement" }, // Alliances
-    { url: "https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=80", title: "Le Bouquet" }, // Mariée confetti
-    { url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80", title: "L'Arche de l'Union" }, // Arche champêtre
-    { url: "https://images.unsplash.com/photo-1465495910483-0d6745778703?auto=format&fit=crop&w=800&q=80", title: "Fumigènes & Joie" }, // Fumigènes couleur
-    { url: "https://images.unsplash.com/photo-1519225495810-751251df6127?auto=format&fit=crop&w=800&q=80", title: "Mise en Scène" }, // Allée centrale
-    { url: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80", title: "Le Rire & L'Émotion" }, // Portrait NB
-    { url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80", title: "Les Témoins" } // N'zo & la mariée
+    { url: "/assets/PHOTOS-DE-MARIAGE-.png", title: "L'Art du Baiser" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-4.png", title: "La Réception" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-6-1.png", title: "La Cérémonie Laïque" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-7.png", title: "L'Engagement" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-10.png", title: "Le Bouquet" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-11.png", title: "L'Arche de l'Union" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-12.png", title: "Fumigènes & Joie" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-13-1.png", title: "Mise en Scène" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-14.png", title: "Le Rire & L'Émotion" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-15.png", title: "Les Témoins" },
+    { url: "/assets/PHOTOS-DE-MARIAGE-18.png", title: "L'Union Parfaite" },
+    { url: "/assets/Pasted-Graphic-9.png", title: "Moments Magiques" }
   ];
 
   const handleScroll = (direction: 'left' | 'right') => {
@@ -40,9 +42,9 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
       {/* SECTION 1: HERO RESTAURÉE */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1920&q=80" 
-            className="w-full h-full object-cover brightness-[0.6]" 
+          <img
+            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1920&q=80"
+            className="w-full h-full object-cover brightness-[0.6]"
             alt="Wedding Veil Kiss"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-white"></div>
@@ -59,7 +61,7 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light drop-shadow-lg italic">
             Confiez-nous le fil rouge du plus beau jour de votre vie !
           </p>
-          <button 
+          <button
             onClick={onContactClick}
             className="bg-pink-600 text-white px-12 py-4 rounded-full font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl hover:scale-105 active:scale-95"
           >
@@ -91,9 +93,9 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
         <div className="space-y-12">
           <div className="relative mb-16">
             <div className="absolute -left-12 -top-12 w-64 h-64 bg-pink-50 rounded-full -z-10 blur-3xl opacity-50"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80" 
-              className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" 
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80"
+              className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
               alt="Cérémonie illustration"
             />
           </div>
@@ -102,7 +104,7 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
             <p>
               <strong className="text-black font-bold">Cérémonies laïques, religieuses</strong> (mais à votre manière), remariage, ou renouvellement de vos voeux, <strong className="text-pink-600 font-bold">je me charge</strong> de vous proposer ou de créer avec vous <strong className="text-black italic">le texte de votre cérémonie d’engagement</strong>, de mettre en scène votre cérémonie et de vous proposer la décoration, la sonorisation (micros, musique, DJ), la vidéo et la photo. Avec, bien entendu, tout ce que vous pourriez avoir comme souhaits.
             </p>
-            
+
             <p>
               <strong className="text-black font-black uppercase tracking-tighter">Chers futurs mariés</strong>, que vous soyez croyants ou non, que vous soyez traditionnels, funky ou excentriques, je <strong className="text-black font-bold">m’adapte à vous</strong>. Parce que, ce que vous m’offrez ce jour là, c’est de vous unir dans l’ amour au milieu de votre famille et de vos proches… et je dois vous avouer qu’à chaque fois, je suis saisi et je me dis :
             </p>
@@ -134,7 +136,7 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
           </div>
         </div>
 
-        <div 
+        <div
           ref={scrollRef}
           className="flex space-x-6 overflow-x-auto scrollbar-hide px-6 md:px-16 pb-12 snap-x snap-mandatory"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
@@ -161,10 +163,10 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
               <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Réalisations <span className="text-pink-600">Wedding</span></h2>
             </div>
           </div>
-          
-          <VideoRow 
-            category={weddingCategory} 
-            onVideoSelect={onVideoSelect} 
+
+          <VideoRow
+            category={weddingCategory}
+            onVideoSelect={onVideoSelect}
           />
         </section>
       )}
@@ -180,7 +182,7 @@ const WeddingPage: React.FC<WeddingPageProps> = ({ onVideoSelect, onContactClick
             Rencontons-nous pour donner vie à vos rêves les plus fous.
           </p>
           <div className="pt-8">
-            <button 
+            <button
               onClick={onContactClick}
               className="bg-black text-white px-16 py-5 rounded-full font-black uppercase tracking-[0.2em] hover:bg-pink-600 transition-all shadow-xl hover:scale-105 active:scale-95"
             >
