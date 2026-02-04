@@ -1,0 +1,8 @@
+{
+  "name": "N'zo Prod Showcase",
+  "description": "A Netflix-inspired professional video portfolio for N'zo Prod, featuring categorized Vimeo and YouTube video showcases.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
